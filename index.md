@@ -5,9 +5,8 @@ title: Mae Sliwinski
 
 ## About Me
 
-<div class="team-banner">
-  <img src="{{ 'assets/images/team-banner.jpg' | relative_url }}" alt="Team photo">
-</div>
+![Team photo](/assets/images/team-banner.jpg)
+![Profile Picture](/assets/images/mae.jpg)
 
 ![Profile Picture]({{ "assets/images/mae.jpg" | relative_url }}){: class="profile-image"}
 

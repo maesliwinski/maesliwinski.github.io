@@ -13,7 +13,9 @@ title_separator          : "-"
 subtitle                 : # site tagline that appears below site title in masthead
 name                     : Mae Sliwinski
 description              : Mae Sliwinski - Projects and CV 
-baseurl                  : "maesliwinski.github.io"
+url:                     : "https://maesliwinski.github.io"
+baseurl                  : ""
+markdown                 : kramdown
 
 # Theme and Style
 theme: jekyll-theme-minimal
