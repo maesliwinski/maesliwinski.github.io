@@ -9,6 +9,11 @@ theme: jekyll-theme-minimal
 
 markdown: kramdown
 
+collections:
+  projects:
+    output: true
+    permalink: /projects/:path/
+
 # Optional styling
 color_scheme: light
 
