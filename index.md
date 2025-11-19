@@ -5,8 +5,8 @@ title: Mae Sliwinski
 
 ## About Me
 
-![Team photo](/assets/images/team-banner.jpg)
-![Profile Picture](/assets/images/mae.jpg)
+![Team photo](/assets/images/team-banner.JPG)
+![Profile Picture](/assets/images/mae.JPG)
 
 ![Profile Picture]({{ "assets/images/mae.jpg" | relative_url }}){: class="profile-image"}
 
