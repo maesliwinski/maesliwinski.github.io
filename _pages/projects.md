@@ -1,18 +1,20 @@
 ---
-layout: default
-title: Mae Sliwinski Portfolio
+layout: page
+title: Projects
 permalink: /projects/
 ---
 
+<h2>Projects</h2>
+
 <div class="gallery-container">
-<div class="project-gallery">
+  <div class="project-gallery">
     {% for project in site.projects %}
       <div class="gallery-item">
         <a href="{{ project.url | relative_url }}">
-          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}" />
-          <p>{{ project.title}}</p>
+          <img src="{{ project.image | relative_url }}" alt="{{ project.title }}">
+          <p>{{ project.title }}</p>
         </a>
       </div>
     {% endfor %}
-</div>
+  </div>
 </div>
