@@ -20,7 +20,7 @@ title: Mae Sliwinski – Projects and CV
 
 ## About Me
 
-![Photo of Mae Sliwinski](/assets/images/mae.jpg)
+![Photo of Mae Sliwinski](/assets/images/mae.JPG)
 
 My name is Mae Sliwinski, and I am a senior studying Mechanical Engineering at Cornell University. I am
 passionate about human-factors engineering and design. This interest has led me to lead and manage
