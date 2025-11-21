@@ -6,55 +6,39 @@ permalink: /projects/
 
 <div class="page-shell">
 
-  <a class="back-link" href="/">Back to Home</a>
+  <a class="back-link" href="{{ site.baseurl }}/">Back to Home</a>
 
   <h1>Projects</h1>
 
   <div class="pill-card pill-card--green">
     <h2>Assistive Pen Holders</h2>
     <p class="pill-card-subtitle">
-      Adaptive writing tools for users with limited grip strength
+      Custom writing aids for accessibility
     </p>
     <p>
-      Designed and prototyped customizable pen holders that improve comfort,
-      control, and accessibility for individuals with fine motor challenges.
+      Designed and prototyped adaptable pen holders for users with limited grip
+      strength, focusing on comfort, adjustability, and low-cost fabrication.
     </p>
     <div class="tag-row">
-      <span class="tag-chip">Human-Factors</span>
-      <span class="tag-chip">Additive Manufacturing</span>
-      <span class="tag-chip">Assistive Tech</span>
+      <span class="tag-chip">3D Printing</span>
+      <span class="tag-chip">Human-Centered Design</span>
+      <span class="tag-chip">Accessibility</span>
     </div>
   </div>
 
   <div class="pill-card pill-card--purple">
     <h2>Custom Wheelchair Table</h2>
     <p class="pill-card-subtitle">
-      Modular work surface for therapy, schoolwork, and daily use
+      Modular workspace for school and daily use
     </p>
     <p>
-      Created a removable table system tailored to a wheelchair user's posture
-      and reach, balancing stability, portability, and ease of use.
+      Developed a removable, adjustable work surface tailored to a specific wheelchair,
+      with integrated storage and ergonomic geometry for long-term use.
     </p>
     <div class="tag-row">
-      <span class="tag-chip">Ergonomics</span>
-      <span class="tag-chip">Prototyping</span>
+      <span class="tag-chip">CAD</span>
       <span class="tag-chip">User Testing</span>
-    </div>
-  </div>
-
-  <div class="pill-card pill-card--blue">
-    <h2>Soft Robotics Concept</h2>
-    <p class="pill-card-subtitle">
-      Exploratory design for a soft reflex robot with local intelligence
-    </p>
-    <p>
-      Early-stage concept work on a soft robotic system capable of responsive,
-      embodied interaction using distributed sensing and actuation.
-    </p>
-    <div class="tag-row">
-      <span class="tag-chip">Soft Robotics</span>
-      <span class="tag-chip">Concept Development</span>
-      <span class="tag-chip">Experimental</span>
+      <span class="tag-chip">Prototyping</span>
     </div>
   </div>
 
