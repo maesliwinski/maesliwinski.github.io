@@ -361,3 +361,172 @@ section {
 .hero-button:hover {
   background: #cfe5c8;
 }
+/* ===== Mae custom layout & palette ===== */
+
+/* Color palette */
+:root {
+  --bg-offwhite: #fff6ed;
+  --accent-green: #d6dfcc;
+  --accent-purple: #babbdd;
+  --accent-orange: #f2b48f;  /* soft orange in the same vibe */
+  --accent-blue: #8aaadf;    /* soft blue in the same vibe */
+}
+
+/* Overall background + body text */
+body {
+  background-color: var(--bg-offwhite);
+  color: #000;
+}
+
+/* Use Agrandir for names/titles if available on the site */
+h1, h2, h3,
+.ms-nav__brand,
+.landing-name {
+  font-family: "Agrandir", system-ui, -apple-system, BlinkMacSystemFont,
+    "Segoe UI", sans-serif;
+}
+
+/* Hide the theme's left sidebar header */
+.site-header {
+  display: none;
+}
+
+/* Let content span full width (no sidebar margin) */
+.page-content {
+  margin-left: 0;
+}
+
+/* Slightly wider page wrapper */
+.wrapper {
+  max-width: 1100px;
+}
+
+/* ---------- Top navigation bar ---------- */
+
+.ms-nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 1.25rem 0;
+}
+
+.ms-nav__brand {
+  font-weight: 600;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  font-size: 0.9rem;
+}
+
+.ms-nav__links {
+  display: flex;
+  gap: 0.75rem;
+}
+
+.ms-nav__link {
+  text-decoration: none;
+  font-size: 0.9rem;
+  padding: 0.35rem 0.9rem;
+  border-radius: 999px;
+  border: 1px solid transparent;
+  color: #000;
+}
+
+.ms-nav__link--primary {
+  background-color: var(--accent-green);
+  border-color: var(--accent-green);
+}
+
+.ms-nav__link--outline {
+  border-color: var(--accent-purple);
+}
+
+.ms-nav__link:hover {
+  background-color: var(--accent-purple);
+  border-color: var(--accent-purple);
+}
+
+.ms-nav__link--primary:hover {
+  background-color: var(--accent-orange);
+  border-color: var(--accent-orange);
+}
+
+/* ---------- Full-screen landing "title screen" ---------- */
+
+.landing {
+  min-height: calc(100vh - 80px); /* full height minus nav */
+  display: flex;
+  align-items: center;
+}
+
+.landing-inner {
+  max-width: 640px;
+}
+
+.landing-name {
+  font-size: 3rem;
+  margin-bottom: 0.3rem;
+}
+
+.landing-tagline {
+  font-size: 1.1rem;
+  margin-bottom: 1.6rem;
+}
+
+.landing-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+}
+
+.landing-button {
+  text-decoration: none;
+  padding: 0.7rem 1.6rem;
+  border-radius: 999px;
+  border: 1px solid var(--accent-green);
+  background-color: var(--accent-green);
+  color: #000;
+  font-weight: 500;
+}
+
+.landing-button--secondary {
+  background-color: var(--accent-purple);
+  border-color: var(--accent-purple);
+}
+
+.landing-button:hover {
+  background-color: var(--accent-orange);
+  border-color: var(--accent-orange);
+}
+
+/* ---------- About section: photo beside text ---------- */
+
+.about-section {
+  padding: 3rem 0 4rem;
+  display: grid;
+  grid-template-columns: minmax(0, 260px) minmax(0, 1fr);
+  gap: 2.5rem;
+  align-items: start;
+}
+
+.about-photo {
+  max-width: 100%;
+  border-radius: 16px;
+  display: block;
+}
+
+/* Mobile tweaks */
+@media (max-width: 768px) {
+  .landing {
+    min-height: auto;
+    padding-top: 1rem;
+    padding-bottom: 2rem;
+  }
+
+  .landing-name {
+    font-size: 2.4rem;
+  }
+
+  .about-section {
+    grid-template-columns: 1fr;
+  }
+}
