@@ -216,3 +216,92 @@ footer {
   filter: grayscale(50%); /* greyed out */
 }
 
+/* --- Layout: widen main content area --- */
+.page {
+  max-width: 1200px;   /* use more of the screen */
+  margin: 0 auto;
+}
+
+@media (min-width: 1400px) {
+  .page {
+    max-width: 1300px;
+  }
+}
+
+/* --- Hero card at top of home page --- */
+.hero-card {
+  margin: 2rem 0 3rem;
+  padding: 3rem 2.5rem;
+  border-radius: 18px;
+  border: 4px solid #c9c2e5;   /* soft lavender border */
+  background-color: #f9f1e7;   /* light peach background */
+  text-align: center;
+}
+
+.hero-title {
+  font-size: 2.5rem;
+  margin: 0 0 0.5rem;
+}
+
+.hero-subtitle {
+  font-size: 1rem;
+  margin: 0 0 1.75rem;
+  opacity: 0.8;
+}
+
+/* Buttons inside hero card */
+.hero-buttons {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 0.75rem;
+}
+
+.hero-button {
+  display: inline-block;
+  padding: 0.65rem 1.8rem;
+  border-radius: 999px;
+  text-decoration: none;
+  border: 1px solid #b7c9a3;   /* soft green border */
+  background-color: #dfead1;   /* pill green like your slide */
+  color: #222;
+  font-weight: 500;
+  font-size: 0.95rem;
+}
+
+.hero-button:hover {
+  filter: brightness(0.97);
+}
+
+/* About section layout: image + text side-by-side */
+.about-layout {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 2rem;
+  align-items: flex-start;
+  margin-top: 1.5rem;
+}
+
+.about-photo {
+  max-width: 260px;
+  border-radius: 10px;
+}
+
+/* Stack nicely on small screens */
+@media (max-width: 700px) {
+  .hero-card {
+    padding: 2rem 1.5rem;
+  }
+
+  .hero-title {
+    font-size: 2rem;
+  }
+
+  .about-layout {
+    flex-direction: column;
+  }
+
+  .about-photo {
+    max-width: 100%;
+  }
+}
